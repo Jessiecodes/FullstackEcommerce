@@ -1,9 +1,17 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
 
+dotenv.config();
+
+//INITIALIZE EXPRESS APP();
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+// Add MIDDLEWARE- parses json data in body of request // 
+
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/healthecom', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
