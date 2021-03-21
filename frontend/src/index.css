@@ -228,3 +228,11 @@ img.large {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Alert */
+.loading {
+  display: block !important;
+}
+.success {
+  color: #20a020;
+}
