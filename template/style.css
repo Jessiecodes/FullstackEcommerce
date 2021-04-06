@@ -13,9 +13,9 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header"
-    "main"
-    "footer";
+    'header'
+    'main'
+    'footer';
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
@@ -40,8 +40,9 @@ h1 {
 }
 h2 {
   font-size: 1.6rem;
-  padding: 1rem;
+  padding: 1rem 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -67,7 +68,6 @@ a.brand {
 .row.center {
   justify-content: center;
 }
-
 /* Image */
 img {
   border-radius: 0.5rem;
@@ -90,12 +90,11 @@ img.medium {
 .card-body > * {
   margin-bottom: 0.5rem;
 }
-
 .price {
   font-size: 2rem;
 }
 /* Rating */
 .rating span {
-  color: gold;
+  color: #f0c040;
   margin: 0.1rem;
 }
